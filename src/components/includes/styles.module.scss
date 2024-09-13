@@ -18,13 +18,22 @@
     strong {
         font-weight: 700;
     }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 .listItemsWrapper {
     display: flex;
     gap: 16px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
 }
 .imageBlock {
     width: 40%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 .listItem {
     display: flex;

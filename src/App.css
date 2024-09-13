@@ -190,6 +190,9 @@ h3 {
     .videoBlock iframe {
         height: 525px;
     }
+    .mainWrapper {
+        padding: 0 64px;
+    }
 }
 @media screen and (max-width: 768px) {
     h1 {
