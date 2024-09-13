@@ -1,0 +1,12 @@
+.listItem {
+    display: flex;
+    gap: 8px;
+    &::before {
+        content: '';
+        display: block;
+        min-width: 30px;
+        width: 30px;
+        height: 30px;
+        background-image: url('../../assets/images/success-green-check-mark-icon.svg');
+    }
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import AboutRetreat from './components/aboutRetreat/AboutRetreat';
+import AwakenRetreat from './components/awakenRetreat/AwakenRetreat';
 import HeaderComponent from './components/header/header';
 import HeaderBackground from './components/headerBackground/HeaderBackground';
 import Includes from './components/includes/Includes';
@@ -23,8 +24,11 @@ function App() {
                         <HeaderBackground title={'The Venue Video:'} trigger="videoBlock" componentId={1} />
                         <VideoBlock />
                     </div>
-                    <div className='includes'>
+                    <div className="includes">
                         <Includes />
+                    </div>
+                    <div>
+                        <AwakenRetreat />
                     </div>
                 </div>
             </div>
