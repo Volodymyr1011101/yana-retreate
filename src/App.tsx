@@ -1,8 +1,9 @@
-import './App.css'
-import AboutRetreat from './components/aboutRetreat/AboutRetreat'
-import HeaderComponent from './components/header/header'
-import HeaderBackground from './components/headerBackground/HeaderBackground'
-import VideoBlock from './components/videoBlock/VideoBlock'
+import './App.css';
+import AboutRetreat from './components/aboutRetreat/AboutRetreat';
+import HeaderComponent from './components/header/header';
+import HeaderBackground from './components/headerBackground/HeaderBackground';
+import Includes from './components/includes/Includes';
+import VideoBlock from './components/videoBlock/VideoBlock';
 
 function App() {
     return (
@@ -19,8 +20,11 @@ function App() {
                         <AboutRetreat trigger="page" />
                     </div>
                     <div className="videoBlock">
-                        <HeaderBackground title={'The Venue Video:'} trigger="videoBlock" />
+                        <HeaderBackground title={'The Venue Video:'} trigger="videoBlock" componentId={1} />
                         <VideoBlock />
+                    </div>
+                    <div className='includes'>
+                        <Includes />
                     </div>
                 </div>
             </div>

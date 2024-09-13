@@ -10,7 +10,7 @@ const AboutRetreat = ({ trigger }: { trigger: string }) => {
     }, []);
     return (
         <div className={`${styles.wrapper} aboutTrigger`}>
-            <HeaderBackground title={'About the Retreat:'} trigger={'aboutTrigger'} />
+            <HeaderBackground title={'About the Retreat:'} trigger={'aboutTrigger'} componentId={0} />
             <div className={styles.textBlock}>
                 <div className={`${styles.text} leftText`}>
                     <p>

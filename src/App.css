@@ -128,11 +128,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+img {
+    width: 100%;
+    height: auto;
+}
 .App {
     font-family: 'Open Sans', sans-serif;
 }
 .mainWrapper {
-    padding: 0 64px;
+    padding: 0 212px;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -153,6 +157,10 @@ h1 {
 h2 {
     font-size: 48px;
     font-weight: 700;
+}
+h3 {
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .retreat-wrapper {
