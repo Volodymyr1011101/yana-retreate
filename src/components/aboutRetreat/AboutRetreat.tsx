@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { animate } from '../../assets/functions/animate';
-import Image from '../../assets/images/745C9FEC-E4CC-4344-8834-D0E767C8C65A.webp';
+import Image from '../../assets/images/8445883D-1573-4D6E-8671-527B0D7C5123.webp';
 import HeaderBackground from '../headerBackground/HeaderBackground';
 import styles from './styles.module.scss';
 const AboutRetreat = ({ trigger }: { trigger: string }) => {
@@ -9,8 +9,8 @@ const AboutRetreat = ({ trigger }: { trigger: string }) => {
         animate('right', -200, 'imageBlock', 1, trigger);
     }, []);
     return (
-        <div className={styles.wrapper}>
-            <HeaderBackground title={'About the Retreat:'} trigger={styles.wrapper} />
+        <div className={`${styles.wrapper} aboutTrigger`}>
+            <HeaderBackground title={'About the Retreat:'} trigger={'aboutTrigger'} />
             <div className={styles.textBlock}>
                 <div className={`${styles.text} leftText`}>
                     <p>

@@ -1,7 +1,10 @@
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
 import { animate } from '../../assets/functions/animate';
 import './styles.scss';
+
+gsap.registerPlugin(ScrollTrigger);
 interface Props {
     title: string;
     trigger: string;
@@ -13,16 +16,14 @@ const HeaderBackground = ({ title, trigger }: Props) => {
         gsap.fromTo(
             '.title',
             {
-                opacity: 0,
-                color: '#fff'
+                opacity: 0
             },
             {
                 delay: 0.7,
-                opacity: 1,
-                color: '#fff'
+                opacity: 1
             }
         );
-    });
+    }, []);
     return (
         <div className="wrapper">
             <div className="left"></div>

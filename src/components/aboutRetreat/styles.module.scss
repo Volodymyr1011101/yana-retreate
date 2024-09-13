@@ -9,17 +9,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 24px;
-    @media screen and (max-width: 480px) {
-        flex-direction: column-reverse;
-    }
 }
 .text {
     position: relative;
     font-size: 26px;
     font-weight: 500;
     line-height: 36px;
-    width: 50%;
+    width: 100%;
     opacity: 0;
     @media screen and (max-width: 1060px) {
         line-height: 26px;
@@ -29,19 +27,14 @@
         line-height: 20px;
         font-size: 16px;
     }
-    @media screen and (max-width: 700px) {
-        width: 100%;
-    }
 }
 .image {
     position: relative;
-    width: 30%;
-    @media screen and (max-width: 700px) {
-        width: 40%;
-    }
-    @media screen and (max-width: 480px) {
-        width: 100%;
-    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
         max-width: 100%;
     }
