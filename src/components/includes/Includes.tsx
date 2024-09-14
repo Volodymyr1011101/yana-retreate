@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
 import Image from '../../assets/images/DF4A7754-D6D8-4C30-8F6A-E8EF99BA8147.webp';
-import Vulcano from '../../assets/images/vulcano.webp';
+import Pool from '../../assets/images/pool.webp';
 import HeaderBackground from '../headerBackground/HeaderBackground';
 import ListItemComponent from '../listItemComponent/ListItemComponent';
 import { mockData } from './mock_data';
@@ -100,11 +100,11 @@ const Includes = () => {
                 <div className={styles.listItemsWrapper}>
                     <ul className={`${styles.retreatList} ${styles.list}`} ref={main2}>
                         {mockData.map(item => (
-                            <ListItemComponent strong={item.strong} text={item.text} key={item.strong} componentId={2} className={''}/>
+                            <ListItemComponent strong={item.strong} text={item.text} key={item.strong} componentId={2} className={''} />
                         ))}
                     </ul>
                     <div className={styles.imageBlock}>
-                        <img src={Vulcano} alt="Vulcano" />
+                        <img src={Pool} alt="Vulcano" />
                     </div>
                 </div>
             </div>

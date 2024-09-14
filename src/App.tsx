@@ -4,7 +4,10 @@ import AwakenRetreat from './components/awakenRetreat/AwakenRetreat';
 import HeaderComponent from './components/header/header';
 import HeaderBackground from './components/headerBackground/HeaderBackground';
 import Includes from './components/includes/Includes';
+import { mockData } from './components/owners/mock_data';
+import Owner from './components/owners/Owner';
 import VideoBlock from './components/videoBlock/VideoBlock';
+import WhatIncludes from './components/whatIncludes/WhatIncludes';
 
 function App() {
     return (
@@ -24,11 +27,29 @@ function App() {
                         <HeaderBackground title={'The Venue Video:'} trigger="videoBlock" componentId={1} />
                         <VideoBlock />
                     </div>
+                    <div className="ownersBlock">
+                        <HeaderBackground title={'Facilitator'} trigger={'owners'} componentId={6} />
+                        <div className="owners">
+                            {mockData.map(owner => (
+                                <Owner
+                                    photo={owner.photo}
+                                    name={owner.name}
+                                    biography={owner.biography}
+                                    social={owner.social}
+                                    quote={owner.quote}
+                                    key={owner.name}
+                                />
+                            ))}
+                        </div>
+                    </div>
                     <div className="includes">
                         <Includes />
                     </div>
                     <div>
                         <AwakenRetreat />
+                    </div>
+                    <div>
+                        <WhatIncludes />
                     </div>
                 </div>
             </div>

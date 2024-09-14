@@ -145,6 +145,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    overflow: hidden;
 }
 h1 {
     font-size: 76px;
@@ -217,5 +218,17 @@ h3 {
     }
     .videoBlock iframe {
         height: 245px;
+    }
+}
+.ownersBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.owners {
+    display: flex;
+    gap: 48px;
+    > div {
+        width: calc(50% - 24px);
     }
 }

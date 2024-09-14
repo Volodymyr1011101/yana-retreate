@@ -54,6 +54,9 @@ const AwakenRetreat = () => {
                     </div>
                 ))}
             </div>
+            <div className={styles.additional}>
+                <p>(schedules are subject to change without notice due to weather or any additional circumstance)</p>
+            </div>
         </div>
     );
 };

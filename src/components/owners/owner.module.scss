@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0px 0px 0px 0px #848484;
+    position: relative;
+}
+.image {
+    overflow: hidden;
+    box-shadow: 7px 7px 11px -2px #848484;
+}
+.ownerBio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+.name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    @media screen and (max-width: 480px) {
+        font-size: 25px;
+    }
+}
+.ownerDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.quote {
+    line-height: 20px;
+    font-style: italic;
+    font-weight: 600;
+    color: #707070;
+}
+.ownerSocial {
+    display: flex;
+    gap: 16px;
+}
+.socialLink {
+    display: block;
+    width: 25px;
+    height: 25px;
+}

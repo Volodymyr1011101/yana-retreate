@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { animate } from '../../assets/functions/animate';
-import Image from '../../assets/images/8445883D-1573-4D6E-8671-527B0D7C5123.webp';
+import Image from '../../assets/images/office.webp';
 import HeaderBackground from '../headerBackground/HeaderBackground';
 import styles from './styles.module.scss';
 const AboutRetreat = ({ trigger }: { trigger: string }) => {
