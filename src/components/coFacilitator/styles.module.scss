@@ -21,6 +21,10 @@
     gap: 24px;
     border-right: 10px solid rgb(127, 160, 70);
     padding: 0 16px 0 0;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 .name {
     font-size: 30px;
