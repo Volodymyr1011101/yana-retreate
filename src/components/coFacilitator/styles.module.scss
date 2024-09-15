@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.imageBlock {
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    @media screen and (max-width: 768px) {
+        min-width: 130px;
+        width: 130px;
+        height: 130px;
+    }
+}
+.coFacilitator {
+    display: flex;
+    gap: 24px;
+    border-right: 10px solid rgb(127, 160, 70);
+    padding: 0 16px 0 0;
+}
+.name {
+    font-size: 30px;
+    font-weight: 600;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    line-height: 24px;
+    font-size: 18px;
+}
+.coFacilitatorWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

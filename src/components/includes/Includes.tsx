@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
-import Image from '../../assets/images/DF4A7754-D6D8-4C30-8F6A-E8EF99BA8147.webp';
+import Image from '../../assets/images/6.webp';
 import Pool from '../../assets/images/pool.webp';
 import HeaderBackground from '../headerBackground/HeaderBackground';
 import ListItemComponent from '../listItemComponent/ListItemComponent';

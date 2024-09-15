@@ -136,7 +136,7 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 .mainWrapper {
-    padding: 0 212px;
+    padding: 0 212px 60px;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -146,6 +146,21 @@ img {
     flex-direction: column;
     gap: 48px;
     overflow: hidden;
+}
+.palmBgRightTop {
+    width: 353px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.palmBgLeftTop {
+    width: 353px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(-1, 1);
 }
 h1 {
     font-size: 76px;
@@ -158,6 +173,7 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: 700;
+    text-align: center;
 }
 h3 {
     font-weight: 600;
@@ -186,13 +202,17 @@ h3 {
     .videoBlock iframe {
         height: 640px;
     }
+    .palmBgLeftTop,
+    .palmBgRightTop {
+        width: 250px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .videoBlock iframe {
         height: 525px;
     }
     .mainWrapper {
-        padding: 0 64px;
+        padding: 0 64px 60px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -206,7 +226,11 @@ h3 {
         height: 410px;
     }
     .mainWrapper {
-        padding: 0 32px;
+        padding: 0 32px 60px;
+    }
+    .palmBgLeftTop,
+    .palmBgRightTop {
+        width: 200px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -218,6 +242,10 @@ h3 {
     }
     .videoBlock iframe {
         height: 245px;
+    }
+    .palmBgLeftTop,
+    .palmBgRightTop {
+        width: 130px;
     }
 }
 .ownersBlock {

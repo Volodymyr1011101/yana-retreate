@@ -6,8 +6,10 @@ const WhatIncludes = () => {
     return (
         <div className={`${styles.wrapper} includes-wrapper`}>
             <HeaderBackground title={'What Includes'} trigger={'includes-wrapper'} componentId={7} />
-            <IncludeExcludeList title={'Includes'} type={'include'} list={includes} />
-            <IncludeExcludeList title={'Excludes'} type={'exclude'} list={exclusions} />
+            <div className={styles.listsWrapper}>
+                <IncludeExcludeList title={'Includes'} type={'include'} list={includes} />
+                <IncludeExcludeList title={'Excludes'} type={'exclude'} list={exclusions} />
+            </div>
         </div>
     );
 };

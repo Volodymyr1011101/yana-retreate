@@ -1,0 +1,1 @@
+.wrapper{display:flex;flex-direction:column;gap:48px}.moreList{display:flex;flex-direction:column;gap:16px}.moreItem{display:flex;align-items:center;font-size:24px;gap:16px;line-height:26px}.moreItem p{width:70%}.moreItem img{width:30%}@media screen and (max-width: 600px){.moreItem{font-size:16px;line-height:18px}}

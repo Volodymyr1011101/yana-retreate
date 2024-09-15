@@ -1,0 +1,97 @@
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.room {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+    border-left: 8px solid rgb(127, 160, 70);
+    @media screen and (max-width: 1280px) {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+}
+.text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        flex-grow: 1;
+    }
+    @media screen and (max-width: 1280px) {
+        gap: 16px;
+    }
+    @media screen and (max-width: 480px) {
+        width: 80%;
+    }
+}
+.images {
+    display: flex;
+    gap: 16px;
+    img {
+        max-width: 320px;
+        border-radius: 8px;
+        @media screen and (max-width: 1280px) {
+            max-width: 400px;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 320px;
+        }
+        @media screen and (max-width: 480px) {
+            max-width: 170px;
+        }
+        @media screen and (max-width: 380px) {
+            max-width: 140px;
+        }
+    }
+}
+.bookButton {
+    display: block;
+    padding: 16px 32px;
+    width: fit-content;
+    background: rgb(15, 203, 19);
+    background: linear-gradient(90deg, rgba(15, 203, 19, 1) 0%, rgba(235, 255, 232, 1) 100%);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2c1313;
+    font-weight: 700;
+}
+.addDescription {
+    display: block;
+    text-align: center;
+}
+.warning {
+    background-color: rgb(209, 246, 233);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.importantInfo {
+    color: red;
+}
+.importantBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    h4 {
+        font-size: 24px;
+    }
+}
+.importantList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    li {
+        padding: 3px 5px;
+        border-left: 5px solid red;
+    }
+}

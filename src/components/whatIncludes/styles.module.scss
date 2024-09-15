@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.listsWrapper {
+    display: flex;
+    gap: 16px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+}
