@@ -41,7 +41,7 @@ const AwakenRetreat = () => {
     );
     return (
         <div className={`awakenWrapper ${styles.wrapper}`}>
-            <HeaderBackground title={'AWAKEN ABUNDANCE RETREAT'} trigger={'awakenWrapper'} componentId={3} />
+            <HeaderBackground title={'Retreat’s itinerary'} trigger={'awakenWrapper'} componentId={3} />
             <div className={styles.daysList} ref={main3}>
                 {mockData.map(item => (
                     <div key={item.title} className={styles.daysListItem}>

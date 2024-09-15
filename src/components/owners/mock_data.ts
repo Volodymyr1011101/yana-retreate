@@ -26,7 +26,7 @@ export const mockData: IOwners[] = [
 		}
 	},
 	{
-		name: 'Avrora Grunko',
+		name: 'Avrora Gunko',
 		photo: Avrora,
 		biography: '<p>Avrora Gunko, health and fitness coach, plant-based nutritionist, and professional athlete. She combines her yoga fitness approach and holistic nutrition knowledge to help women find peace within and shine from the inside out.</p>',
 		social: {

@@ -46,7 +46,7 @@ const MoreAboutRetreat = () => {
     );
     return (
         <div className={`${styles.wrapper} more-wrapper`}>
-            <HeaderBackground title={'More about retreat'} trigger={'more-wrapper'} componentId={9} />
+            <HeaderBackground title={'more about the retreat'} trigger={'more-wrapper'} componentId={9} />
             <div ref={main}>
                 <ul className={styles.moreList}>
                     <li className={`${styles.moreItem} more-listItem`}>

@@ -29,7 +29,7 @@ export const mockData:MockData[] = [
 			},
 			{
 				strong: 'Mid-Morning:',
-				text: 'Plant-based breakfast with local harwest fruits and Kona coffee.'
+				text: 'Plant-based breakfast with local harvest fruits and Kona coffee.'
 			},
 			{
 				strong: 'Late Morning:',
@@ -41,7 +41,7 @@ export const mockData:MockData[] = [
 			},
 			{
 				strong: 'Evening:',
-				text: 'Hawalian style vegan dinner and relaxing time: jacuzzi, pool, music, non alcoholic drinks.'
+				text: 'Hawaiian style vegan dinner and relaxing time: jacuzzi, pool, music, non alcoholic drinks.'
 			},
 		 ]
 	},
@@ -54,7 +54,7 @@ export const mockData:MockData[] = [
 			},
 			{
 				strong: 'Mid-Morning:',
-				text: 'Hawaiin breakfast'
+				text: 'Hawaiian breakfast'
 			},
 			{
 				strong: 'Late Morning:',
@@ -79,7 +79,7 @@ export const mockData:MockData[] = [
 			},
 			{
 				strong: 'Mid-Morning:',
-				text: 'Local style plant-based breakfast by chief Natalie Silva'
+				text: 'Local style plant-based breakfast by chef Natalie Silva'
 			},
 			{
 				strong: 'Late Morning:',
@@ -95,7 +95,7 @@ export const mockData:MockData[] = [
 			},
 			{
 				strong: 'Late Evening:',
-				text: 'Farewell Delish Dinner by chief with closing meditation.'
+				text: 'Farewell Delish Dinner by chef with closing meditation.'
 			},
 		]
 	},

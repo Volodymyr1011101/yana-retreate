@@ -38,7 +38,7 @@ function App() {
                         <VideoBlock />
                     </div>
                     <div className="ownersBlock">
-                        <HeaderBackground title={'Facilitator'} trigger={'owners'} componentId={6} />
+                        <HeaderBackground title={'Facilitators'} trigger={'owners'} componentId={6} />
                         <div className="owners">
                             {mockData.map(owner => (
                                 <Owner
