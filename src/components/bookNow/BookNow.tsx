@@ -18,12 +18,16 @@ const BookNow = () => {
     const [show, setShow] = useState<boolean>(false)
     const main = useRef<null | HTMLDivElement>(null);
     const handleCLick = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>):void => {
+        e.stopPropagation()
         e.preventDefault()
         const body = document.querySelector('body')
         body?.classList.toggle('show')
+        body?.addEventListener('click', (e) => {
+            e.stopPropagation()
+            setShow(false)
+            body.classList.remove('show')
+        })
         setShow(!show)
-        console.log(show);
-        
     }
     useGSAP(
         () => {
@@ -54,19 +58,20 @@ const BookNow = () => {
     );
     return (
         <div className={`wrapperBookNow ${styles.mainWrapper}`} ref={main}>
-            <div className={`${styles.paymentBlock} ${show ? styles.show : null}`}>
+            <div className={`${styles.paymentBlock} ${show ? styles.show : null}`} onClick={e => e.stopPropagation()}>
                 <button className={styles.closeButton} onClick={(e) => handleCLick(e)}>X</button>
+                <h3 className={styles.headerInfo}>Payment Info</h3>
                 <span className={styles.paymentSpan}>To secure your spot please send a 500$ deposit via Zelle using this email address <a href="mailto: yanagarden79@gmail.com">yanagarden79@gmail.com</a></span>
                 <span className={styles.paymentSpan}>If you have questions please contact us at the following email address <a href="mailto: yanagarden79@gmail.com">yanagarden79@gmail.com</a></span>
             </div>
             <HeaderBackground title={'Join Now and Choose Your Room:'} trigger={'wrapperBookNow'} componentId={11} />
             <div>
-                <h2>Early BIRD Price (book before 10/10/2024)</h2>
+                <h2>Save 500$ with early bird price (book before 10/10/2024)</h2>
             </div>
             <div className={styles.wrapper}>
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
-                        <h3>Single Private Room $2999 per person</h3>
+                        <h3>Single Private Room $2999 per person (after October 10th $3499)</h3>
                         <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
@@ -78,7 +83,7 @@ const BookNow = () => {
                 </div>
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
-                        <h3>Shared room with 1-2 others (separate beds with a private space) $2599</h3>
+                        <h3>Shared room with 1-2 others (separate beds with a private space) $2599 (after October 10th $3199)</h3>
                         <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
@@ -90,7 +95,7 @@ const BookNow = () => {
                 </div>
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
-                        <h3>Shared King Bed with your sis $1899 per person</h3>
+                        <h3>Shared King Bed with your sis $1899 per person (after October 10th $2399)</h3>
                         <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
