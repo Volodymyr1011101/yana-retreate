@@ -28,7 +28,8 @@ export const mockData: IOwners[] = [
 	{
 		name: 'Avrora Gunko',
 		photo: Avrora,
-		biography: '<p>Avrora Gunko, health and fitness coach, plant-based nutritionist, and professional athlete. She combines her yoga fitness approach and holistic nutrition knowledge to help women find peace within and shine from the inside out.</p>',
+		biography: '<p>Avrora Gunko is a yoga and fitness coach, nutritionist, and 100% natural vegan bikini athlete. Creator of the “Awaken You” program, she combines mindset, spirituality, plant-based nutrition, and fitness to help women live their healthiest and most authentic lives.</p><p>Avrora’s passion lies in guiding women to rediscover the power of their bodies through balanced nutrition, mindful movement, and holistic wellness.</p><p>More information and testimonials read here: <a href="https://avroraprofit.com" target="_blank" rel="noreferrer">https://avroraprofit.com</a></p>',
+		quote: '“I believe the body holds immense wisdom and healing potential. When we nourish it with intention and care, we awaken the strength and confidence within. My mission is to create a safe, supportive space where women can heal, grow, and step fully into their vibrant selves.”',
 		social: {
 			instagram: 'https://www.instagram.com/avroraveganfit?igsh=MXNzMHBvMmdpNGk2OQ=='
 		}

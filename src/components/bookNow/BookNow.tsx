@@ -1,21 +1,30 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef } from 'react';
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useRef, useState } from 'react'
 
-import room10 from '../../assets/images/room10.webp';
-import room3 from '../../assets/images/room3.webp';
-import room5 from '../../assets/images/room5.webp';
-import room7 from '../../assets/images/room7.webp';
-import room8 from '../../assets/images/room8.webp';
-import room9 from '../../assets/images/room9.webp';
-import HeaderBackground from '../headerBackground/HeaderBackground';
-import styles from './styles.module.scss';
+import room10 from '../../assets/images/room10.webp'
+import room3 from '../../assets/images/room3.webp'
+import room5 from '../../assets/images/room5.webp'
+import room7 from '../../assets/images/room7.webp'
+import room8 from '../../assets/images/room8.webp'
+import room9 from '../../assets/images/room9.webp'
+import HeaderBackground from '../headerBackground/HeaderBackground'
+import styles from './styles.module.scss'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const BookNow = () => {
+    const [show, setShow] = useState<boolean>(false)
     const main = useRef<null | HTMLDivElement>(null);
+    const handleCLick = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>):void => {
+        e.preventDefault()
+        const body = document.querySelector('body')
+        body?.classList.toggle('show')
+        setShow(!show)
+        console.log(show);
+        
+    }
     useGSAP(
         () => {
             const boxes = gsap.utils.toArray('.animateItem');
@@ -45,6 +54,11 @@ const BookNow = () => {
     );
     return (
         <div className={`wrapperBookNow ${styles.mainWrapper}`} ref={main}>
+            <div className={`${styles.paymentBlock} ${show ? styles.show : null}`}>
+                <button className={styles.closeButton} onClick={(e) => handleCLick(e)}>X</button>
+                <span className={styles.paymentSpan}>To secure your spot please send a 500$ deposit via Zelle using this email address <a href="mailto: yanagarden79@gmail.com">yanagarden79@gmail.com</a></span>
+                <span className={styles.paymentSpan}>If you have questions please contact us at the following email address <a href="mailto: yanagarden79@gmail.com">yanagarden79@gmail.com</a></span>
+            </div>
             <HeaderBackground title={'Join Now and Choose Your Room:'} trigger={'wrapperBookNow'} componentId={11} />
             <div>
                 <h2>Early BIRD Price (book before 10/10/2024)</h2>
@@ -53,7 +67,7 @@ const BookNow = () => {
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
                         <h3>Single Private Room $2999 per person</h3>
-                        <a href="/" className={styles.bookButton}>
+                        <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
                     </div>
@@ -64,8 +78,8 @@ const BookNow = () => {
                 </div>
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
-                        <h3>Shared room with 1-2 others (separate beds with a private space) $2666</h3>
-                        <a href="/" className={styles.bookButton}>
+                        <h3>Shared room with 1-2 others (separate beds with a private space) $2599</h3>
+                        <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
                     </div>
@@ -77,7 +91,7 @@ const BookNow = () => {
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
                         <h3>Shared King Bed with your sis $1899 per person</h3>
-                        <a href="/" className={styles.bookButton}>
+                        <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
                     </div>

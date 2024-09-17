@@ -260,3 +260,19 @@ h3 {
         width: calc(50% - 24px);
     }
 }
+.show {
+    overflow: hidden;
+    &::after {
+        content: '';
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #0000005a;
+        z-index: 8888;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+}
