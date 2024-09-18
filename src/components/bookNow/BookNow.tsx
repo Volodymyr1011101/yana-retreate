@@ -62,7 +62,7 @@ const BookNow = () => {
                 <button className={styles.closeButton} onClick={(e) => handleCLick(e)}>X</button>
                 <h3 className={styles.headerInfo}>Payment Info</h3>
                 <span className={styles.paymentSpan}>To secure your spot please send a 500$ deposit via Zelle using this email address <a href="mailto: yanagarden79@gmail.com">yanagarden79@gmail.com</a></span>
-                <span className={styles.paymentSpan}>If you have questions please contact us at the following email address <a href="mailto: yanagarden79@gmail.com">yanagarden79@gmail.com</a></span>
+                <span className={styles.paymentSpan}>If you have questions please contact us at the following email address <a href="mailto: yanagarden79@gmail.com">hawaiimanaretreat@gmail.com</a></span>
             </div>
             <HeaderBackground title={'Join Now and Choose Your Room:'} trigger={'wrapperBookNow'} componentId={11} />
             <div>
