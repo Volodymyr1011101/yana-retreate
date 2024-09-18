@@ -76,7 +76,7 @@ const Includes = () => {
                     <ul className={`${styles.list}`} ref={main}>
                         <li className={`list-item ${styles.listItem}`}>
                             <p>
-                                <strong>Personalized Health Coaching Session:</strong> Experience a 50-minute private 1:1 consultation with Avrora Gunko, a
+                                <strong>Personalized Health Coaching Session:</strong> Experience a 30-minute private 1:1 consultation with Avrora Gunko, a
                                 plant-based nutritionist and health coach. Avrora will offer tailored, expert guidance to support your unique health and
                                 wellness goals, ensuring you're fully prepared to make the most of your retreat. This session, held prior to your arrival, is
                                 designed to set a strong foundation for your journey toward transformation.
@@ -95,7 +95,7 @@ const Includes = () => {
                     </div>
                 </div>
                 <div>
-                    <h3>During Retreat:</h3>
+                    <h3>During the Retreat:</h3>
                 </div>
                 <div className={styles.listItemsWrapper}>
                     <ul className={`${styles.retreatList} ${styles.list}`} ref={main2}>
