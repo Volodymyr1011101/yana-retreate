@@ -83,7 +83,7 @@ const BookNow = () => {
                 </div>
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
-                        <h3>Shared room with 1-2 others (separate beds with a private space) $2599 (after October 10th $3199)</h3>
+                        <h3>Shared room with 1-2 others (separate beds with a private space) $2699 (after October 10th $3199)</h3>
                         <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>

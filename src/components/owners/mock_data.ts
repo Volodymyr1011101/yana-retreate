@@ -1,5 +1,5 @@
-import Yana from '../../assets/images/yana.png'
 import Avrora from '../../assets/images/avrora.webp'
+import Yana from '../../assets/images/yana.png'
 
 interface Social {
 	instagram?: string,
@@ -31,7 +31,8 @@ export const mockData: IOwners[] = [
 		biography: '<p>Avrora Gunko is a yoga and fitness coach, nutritionist, and 100% natural vegan bikini athlete. Creator of the “Awaken You” program, she combines mindset, spirituality, plant-based nutrition, and fitness to help women live their healthiest and most authentic lives.</p><p>Avrora’s passion lies in guiding women to rediscover the power of their bodies through balanced nutrition, mindful movement, and holistic wellness.</p><p>More information and testimonials read here: <a href="https://avroraprofit.com" target="_blank" rel="noreferrer">https://avroraprofit.com</a></p>',
 		quote: '“I believe the body holds immense wisdom and healing potential. When we nourish it with intention and care, we awaken the strength and confidence within. My mission is to create a safe, supportive space where women can heal, grow, and step fully into their vibrant selves.”',
 		social: {
-			instagram: 'https://www.instagram.com/avroraveganfit?igsh=MXNzMHBvMmdpNGk2OQ=='
+			instagram: 'https://www.instagram.com/avroraveganfit?igsh=MXNzMHBvMmdpNGk2OQ==',
+			facebook: 'https://www.facebook.com/share/VFCkqVhZdeNzdavc/?mibextid=LQQJ4d'
 		}
 	}
 ]
