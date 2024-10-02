@@ -16,6 +16,7 @@ export const includes: string[] = [
     'How to Discover Dharma - your life purpose workshop',
     'Transportation throughout the retreat (recommended airport Hilo, arrival by 3 pm)',
     '2 plant-based meals daily (breakfast and dinner) with clean fresh voclano water and local fruits available daily at the Guest house',
-    'Accommodation in a shared retreat house'
+    'Accommodation in a shared retreat house',
+    'Horse therapy'
 ];
-export const exclusions: string[] = ['Transfer from/to Kona airport (we provide transter only from Hilo airport, please plan accordinaly', 'Personal expenses', 'Private body therapy from local massage therapist and contact singing bowls massage/soundbath by Yana Garden', 'Travel insurance (recommended)', 'Horse therapy'] 
+export const exclusions: string[] = ['Transfer from/to Kona airport (we provide transter only from Hilo airport, please plan accordinaly', 'Personal expenses', 'Private body therapy from local massage therapist and contact singing bowls massage/soundbath by Yana Garden', 'Travel insurance (recommended)']

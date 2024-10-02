@@ -1,16 +1,16 @@
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useRef, useState } from 'react'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useRef, useState } from 'react';
 
-import room10 from '../../assets/images/room10.webp'
-import room3 from '../../assets/images/room3.webp'
-import room5 from '../../assets/images/room5.webp'
-import room7 from '../../assets/images/room7.webp'
-import room8 from '../../assets/images/room8.webp'
-import room9 from '../../assets/images/room9.webp'
-import HeaderBackground from '../headerBackground/HeaderBackground'
-import styles from './styles.module.scss'
+import room10 from '../../assets/images/room10.webp';
+import room3 from '../../assets/images/room3.webp';
+import room5 from '../../assets/images/room5.webp';
+import room7 from '../../assets/images/room7.webp';
+import room8 from '../../assets/images/room8.webp';
+import room9 from '../../assets/images/room9.webp';
+import HeaderBackground from '../headerBackground/HeaderBackground';
+import styles from './styles.module.scss';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -72,6 +72,7 @@ const BookNow = () => {
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
                         <h3>Single Private Room $2999 per person (after October 10th $3499)</h3>
+                        <span className={styles.leftRoom}>only 1 room left</span>
                         <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
@@ -96,6 +97,7 @@ const BookNow = () => {
                 <div className={`${styles.room} animateItem`}>
                     <div className={styles.text}>
                         <h3>Shared King Bed with your sis $1899 per person (after October 10th $2399)</h3>
+                        <span className={styles.leftRoom}>only 1 bed left</span>
                         <a href="/" className={styles.bookButton} onClick={(e) => handleCLick(e)}>
                             Book Now
                         </a>
